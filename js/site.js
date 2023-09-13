@@ -14,7 +14,7 @@ loadData();
 
 // Function to load the JSON data from the file
 function loadData() {
-    fetch('../data/slrarticle.json')
+    fetch('/data/slrarticle.json')
         .then(response => response.json())
         .then(data => {
             jsonData = data.filter(entry => {
@@ -428,7 +428,7 @@ function createArcDiagram() {
             console.log("Initial currentColorsS:", currentColorsS);
             console.log("Initial currentColorsIR:", currentColorsIR);
 
-            console.log("Länge:" + filteredInteractionData.length);
+            console.log("LÃ¤nge:" + filteredInteractionData.length);
 
             // Update the color of the corresponding data streams
             filteredInteractionData.forEach((entry, index) => {
