@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrossTrafficWebsite</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+    <header>
+        <nav b-poc2ebvxej class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+
+            <a style="color: #007bff" class="navbar-brand" href="/">Cross-Traffic Interaction</a>
+            <div b-poc2ebvxej class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul b-poc2ebvxej class="navbar-nav mr-auto">
+                    
+                    <li b-poc2ebvxej class="nav-item active">
+                        
+                        <a class="navbar-brand" href="/">Visualizations of Systematic Literature Review</a>
+                        <a class="navbar-brand" href="/Video">Videos of Applications</a>
+                    </li>
+                   
+                </ul>
+            </div>
+        </nav>
+      
+    </header>
+    <div b-poc2ebvxej class="container-fluid">
+        <main b-poc2ebvxej role="main" class="pb-3">
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title></title>
+    <style>
+        #json-container {
+            height: 1250px;
+            overflow: auto;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .btn.active {
+            background-color: #007bff; /* Change to your desired active color */
+            color: white;
+        }
+
+        .section-box {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .section-box p, .section-box h5 {
+            margin-bottom: 0rem; /* Adjust as needed */
+        }
+        .btn {
+            padding: 0px 15px; /* vertical padding (height) and horizontal padding (width) */
+        }
+
+        #clear-filters {
+            font-weight: bold;
+        }
+
+        .link {
+            fill: none;
+            stroke: #666;
+            stroke-width: 1.5px;
+        }
+
+        .node text {
+            pointer-events: none;
+            font: 10px sans-serif;
+        }
+        #collapseOne {
+            margin-left: 1cm;
+            margin-right: 1cm;
+        }
+
+    </style>
+</head>
+<body style="margin: 0; padding: 0;">
+    <div class="accordion" id="myAccordion">
+        <div class="accordion-item">
+            <p class="accordion-header" id="headingOne">
+                <button type="button" class="accordion-button btn-primary collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne">Filter Papers</button>
+            </p>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="section-box">
+                                <h5>Interaction Partner</h5>
+                                <p>Entity</p>
+                                <div class="row">
+                                    <div class="btn-group entity" role="group" aria-label="Button group">
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Driver</button>
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Passenger</button>
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Motorcyclist</button>
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Cyclist</button>
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Pedestrian</button>
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Official</button>
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Non-Road-User</button>
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Vehicle</button>
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Smart Object</button>
+                                    </div>
+                                </div>
+                                <p>Role</p>
+                                <div class="row">
+                                    <div class="btn-group role" role="group" aria-label="Button group">
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Active</button>
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Passive</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section-box">
+                                <h5>Situation</h5>
+
+                                <p>Number of lanes</p>
+                                <div class="row">
+                                    <div class="btn-group number-of-lanes" role="group" aria-label="Number of lanes">
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Single</button>
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Two-lane</button>
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Three-lane</button>
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Four-lane</button>
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Five-plus-lane</button>
+                                    </div>
+                                </div>
+
+                                <p>Lane setting</p>
+                                <div class="row">
+                                    <div class="btn-group lane-setting" role="group" aria-label="Lane setting">
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Unidirectional</button>
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Bidirectional</button>
+                                    </div>
+                                </div>
+
+                                <p>Traffic density</p>
+                                <div class="row">
+                                    <div class="btn-group traffic-density" role="group" aria-label="Traffic density">
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Free flow</button>
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Medium flow</button>
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Jammed flow</button>
+                                    </div>
+                                </div>
+
+                                <p>Traffic autonomy</p>
+                                <div class="row">
+                                    <div class="btn-group traffic-autonomy" role="group" aria-label="Traffic autonomy">
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Totally manual</button>
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Mixed</button>
+                                        <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Totally autonomous</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="section-box">
+                                    <h5>Interaction Relationship</h5>
+                                    <p>Entity relationship</p>
+                                    <div class="row">
+                                        <div class="btn-group entity-relationship" role="group" aria-label="Entity relationship">
+                                            <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Close</button>
+                                            <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Acquaintance</button>
+                                            <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Stranger</button>
+                                            <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Not applicable</button>
+                                        </div>
+                                    </div>
+
+                                    <p>Interaction mapping</p>
+                                    <div class="row">
+                                        <div class="btn-group interaction-mapping" role="group" aria-label="Interaction mapping">
+                                            <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">One-to-one</button>
+                                            <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">One-to-many</button>
+                                            <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Many-to-one</button>
+                                            <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Many-to-many</button>
+                                        </div>
+                                    </div>
+
+                                    <p>Interaction flow</p>
+                                    <div class="row">
+                                        <div class="btn-group interaction-flow" role="group" aria-label="Interaction flow">
+                                            <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Direct</button>
+                                            <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Indirect</button>
+                                        </div>
+                                    </div>
+
+                                    <p>Position dependency</p>
+                                    <div class="row">
+                                        <div class="btn-group position-dependency" role="group" aria-label="Position dependency">
+                                            <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">No</button>
+                                            <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Absolute</button>
+                                            <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Relative</button>
+                                        </div>
+                                    </div>
+
+                                    <p>Time synchronicity</p>
+                                    <div class="row">
+                                        <div class="btn-group time-synchronicity" role="group" aria-label="Time synchronicity">
+                                            <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Synchronous</button>
+                                            <button type="button" class="btn filter-btn shadow-none btn-outline-primary btn-sm">Asynchronous</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button id="clear-filters" class="btn btn-outline-dark shadow-none btn-block">Remove All Filters</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ <hr>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row center-block text-center">
+                <h5>Interaction Partner</h5>
+                </div>
+                <div class="row center-block text-center">
+                <div id="arcDiagram"></div>
+                </div>
+                <hr>
+                <div class="row center-block text-center">
+                    <h5>Situation</h5>
+                </div>
+                <div class="row center-block text-center">
+                <div id="S-container"></div>
+                </div>
+                <hr>
+                <div class="row center-block text-center">
+                    <h5>Interaction Relationship</h5>
+                </div>
+                <div class="row center-block text-center">
+                <div id="IR-container"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h5 id="entry-count"></h5>
+                <div id="json-container"></div>
+            </div>
+        </div>
+
+
+
+   
+
+<!-- Visual Studio Browser Link -->
+</html>
+        </main>
+    </div>
+
+    <footer b-poc2ebvxej class="border-top footer text-muted">
+        <div b-poc2ebvxej class="container">
+            &copy; 2023 - Move, Connect, Interact: Introducing a Design Space for Cross-Traffic Interaction 
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="js/site.js"></script>
+
+    
+</body>
+</html>
