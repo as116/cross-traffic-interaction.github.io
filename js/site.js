@@ -495,7 +495,7 @@ function createArcDiagram() {
             console.log("Initial currentColorsS:", currentColorsS);
             console.log("Initial currentColorsIR:", currentColorsIR);
 
-            console.log("Länge:" + filteredInteractionData.length);
+            console.log("LÃ¤nge:" + filteredInteractionData.length);
 
             // Update the color of the corresponding data streams
             filteredInteractionData.forEach((entry, index) => {
